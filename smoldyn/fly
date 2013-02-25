@@ -15,8 +15,10 @@ define_global	length	500
 define_global	radius	100
 define_global 	cyliner_end	400	#should = length-radius
 
-read_file genes
+#load files
+read_file species-appearance
 read_file cell-shape
+read_file species-properties
 
 time_start 0
 time_stop 5000

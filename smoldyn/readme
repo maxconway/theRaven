@@ -1,0 +1,4 @@
+fly is top-level file
+cell-shape defines the appearance and properties of the cell membrane (size is controlled in fly)
+species-appearance gives the list of species that are present, and their appearance
+species-properties gives the properties of the species
