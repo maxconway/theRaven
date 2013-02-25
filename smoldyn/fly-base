@@ -1,6 +1,7 @@
 #########
 /*
 Drosophila embryo simulation
+	units are micron-milisecond
 */
 #########
 
@@ -8,9 +9,14 @@ Drosophila embryo simulation
 graphics opengl
 
 dim 3
-#species A Am Ap Z Zf Y Yp M MYp #list of species
+
+# parameters
+define_global	length	500
+define_global	radius	100
+define_global 	cyliner_end	400	#should = length-radius
+
 read_file genes
-# boxsize 15
+read_file cell-shape
 
 time_start 0
 time_stop 5000
@@ -37,10 +43,6 @@ display_size 	Z 	1
 display_size 	Zf 	1
 display_size 	M 	1
 display_size 	MYp 	1		
-
-boundaries 0 -50 50 r    
-boundaries 1 -50 50 r
-boundaries 2 -50 50 r
 
 # frame_thickness 0
 
@@ -83,16 +85,6 @@ reaction 	m2 	MYp -> M + Yp	2e-2
 product_placement m2 pgemmax 0.2
 reaction 	z1 	Yp + Z -> Y + Z	2.67		
 reaction 	z2 	Yp + Zf -> Y + Zf	2.67					
-
-/*
-cmd b pause
-cmd b equilmol A Am 0.13
-cmd @ 100 equilmol A Am 0.13
-cmd @ 200 equilmol A Am 0.4
-*/
-cmd i 0 1990 10 equilmol A Am 0.132
-cmd i 2000 3990 10 equilmol A Am 0.066
-cmd i 4000 5990 10 equilmol A Am 0.132
 
 #output_files out2.txt  
 #cmd i 0 1000000 10 molcount out2.txt
