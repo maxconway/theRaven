@@ -1,5 +1,5 @@
 run : 
-	smoldyn fly-base
+	smoldyn fly
 
 clean :
 	rm -f *~
