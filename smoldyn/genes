@@ -1,0 +1,29 @@
+##### species list
+## Antero-posterior system
+species bicoid hunchback nanos caudal gurken oskar
+# terminal
+#species torso trunk
+# gap
+#species hunchback kruppel knirps giant tailless
+#pair-rule
+#even-skipped
+
+##### colours and sizes
+# bicoid
+color bicoid black
+display_size bicoid 3
+# hunchback
+color hunchback black
+display_size hunchback 3
+# nanos
+color nanos black
+display_size nanos 3
+# caudal
+color caudal black
+display_size caudal 3
+# gurken
+color gurken black
+display_size gurken 3
+# oskar
+color oskar black
+display_size oskar 3

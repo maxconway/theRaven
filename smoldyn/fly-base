@@ -1,10 +1,15 @@
-# E. coli chemotaxis simulation file for SEB2.2
+#########
+/*
+Drosophila embryo simulation
+*/
+#########
 
 #graphics opengl_good
 graphics opengl
 
 dim 3
-species A Am Ap Z Zf Y Yp M MYp #list of species
+#species A Am Ap Z Zf Y Yp M MYp #list of species
+read_file genes
 # boxsize 15
 
 time_start 0
