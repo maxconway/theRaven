@@ -13,6 +13,8 @@ define_global	endtime	10000
 define_global	length	500
 define_global	radius	100
 define_global 	cyliner_end	400	#should = length-radius
+define_global	halfLength	250	#==length/2
+define_global	coreRadius	75	#==radius-25
 define_global	mbicoid_num	50	#num
 define_global	pbicoid_dif	7.4	#7.4 micrometers^2/s
 define_global	bicoid_trans	0.4	#s^-1
@@ -21,6 +23,7 @@ define_global	pbicoid_deg	0.000333333	#pbicoid_deg*60000 = bicoid_trans*mbicoid_
 
 #load files
 read_file cell-shape
+read_file cell-core
 read_file species-properties
 
 time_start 0
@@ -35,6 +38,6 @@ output_files pbicoid_profile
 cmd i 0 endtime 50 molcountspace pbicoid 0 0 length 50 -radius radius -radius radius 0 pbicoid_profile
 
 #graphics
-#read_file appearance
+read_file appearance
 
 end_file
