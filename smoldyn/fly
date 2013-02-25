@@ -1,27 +1,40 @@
 /*
 Drosophila embryo simulation
-	units are micron-milisecond
+	units are micron-second
 */
-
-graphics opengl # _good
 
 dim 3
 
+# species list
+species mbicoid pbicoid
+
 # parameters
+define_global	endtime	10000
 define_global	length	500
 define_global	radius	100
 define_global 	cyliner_end	400	#should = length-radius
-define_global	mbicoid_num	100
-define_global	pbicoid_dif	100
-define_global	bicoid_trans	100
+define_global	mbicoid_num	50	#num
+define_global	pbicoid_dif	7.4	#7.4 micrometers^2/s
+define_global	bicoid_trans	0.4	#s^-1
+define_global	pbicoid_deg	0.000333333	#pbicoid_deg*60000 = bicoid_trans*mbicoid_num = 0.02/min #s^-1
+
 
 #load files
-read_file species-appearance
 read_file cell-shape
 read_file species-properties
 
 time_start 0
-time_stop 5000
-time_step 1								
+time_stop endtime
+time_step 5
+
+#output
+output_root ../results/
+output_files pbicoid_profile
+
+#logging
+cmd i 0 endtime 50 molcountspace pbicoid 0 0 length 50 -radius radius -radius radius 0 pbicoid_profile
+
+#graphics
+#read_file appearance
 
 end_file

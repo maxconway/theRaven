@@ -4,8 +4,6 @@ boundaries 0 0 length
 boundaries 1 -radius radius
 boundaries 2 -radius radius
 
-frame_thickness 0
-
 start_surface cellmembrane
 action all both reflect
 color both purple 1

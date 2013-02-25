@@ -1,4 +1,4 @@
-run : 
+run : fly cell-shape  
 	smoldyn fly
 
 clean :

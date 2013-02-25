@@ -1,0 +1,12 @@
+text_display time pbicoid
+graphics opengl
+frame_thickness 0
+
+##### colours and sizes
+# pbicoid
+color pbicoid black
+display_size pbicoid 3
+# mbicoid
+color mbicoid black
+display_size mbicoid 3
+
