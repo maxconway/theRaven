@@ -1,0 +1,25 @@
+###### species properties
+##species are:
+#pbicoid
+#mbicoid
+#hunchback
+#nanos
+#caudal
+#gurken
+#oskar
+
+##start
+#mol	amount	species	location
+mol	mbicoid_num	mbicoid	1 0 0
+
+#surfacemol	nmol	species	surface	pshape	panel
+#surface_mol	mbicoid_num	mbicoid	cellmembrane	hemi	front
+
+##diffusion
+#	species	speed
+difc	mbicoid	0
+difc	pbicoid	pbicoid_dif
+
+##
+#		name		equation	rate
+reaction	bicoid-trans mbicoid -> mbicoid + pbicoid	bicoid_trans

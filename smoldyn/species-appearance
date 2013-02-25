@@ -1,6 +1,6 @@
 ##### species list
 ## Antero-posterior system
-species bicoid hunchback nanos caudal gurken oskar
+species mbicoid pbicoid hunchback nanos caudal gurken oskar
 # terminal
 #species torso trunk
 # gap
@@ -9,9 +9,12 @@ species bicoid hunchback nanos caudal gurken oskar
 #even-skipped
 
 ##### colours and sizes
-# bicoid
-color bicoid black
-display_size bicoid 3
+# pbicoid
+color pbicoid black
+display_size pbicoid 3
+# mbicoid
+color mbicoid black
+display_size mbicoid 3
 # hunchback
 color hunchback black
 display_size hunchback 3

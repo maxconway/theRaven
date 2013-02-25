@@ -4,13 +4,13 @@ boundaries 0 0 length
 boundaries 1 -radius radius
 boundaries 2 -radius radius
 
-# frame_thickness 0
+frame_thickness 0
 
 start_surface cellmembrane
 action all both reflect
 color both purple 1
 polygon both edge
-panel hemi radius 0 0 radius 1 0 0 20 10
+panel hemi radius 0 0 radius 1 0 0 20 10	front
 panel cyl radius 0 0 cyliner_end 0 0 radius 20 20
 panel hemi cyliner_end 0 0 radius -1 0 0 20 10	
 end_surface
