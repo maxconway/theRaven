@@ -6,20 +6,23 @@ Drosophila embryo simulation
 dim 3
 
 # species list
-species mbicoid pbicoid
+species mbicoid pbicoid nucleus
 
 # parameters
 define_global	endtime	10000
 define_global	length	500
 define_global	radius	100
+
 define_global 	cyliner_end	400	#should = length-radius
 define_global	halfLength	250	#==length/2
 define_global	coreRadius	75	#==radius-25
-define_global	mbicoid_num	50	#num
+
 define_global	pbicoid_dif	7.4	#7.4 micrometers^2/s
+define_global	mbicoid_num	50	#num
 define_global	bicoid_trans	0.4	#s^-1
 define_global	pbicoid_deg	0.000333333	#pbicoid_deg*60000 = bicoid_trans*mbicoid_num = 0.02/min #s^-1
 
+define_global	nuclear-absorption-speed	anumber
 
 #load files
 read_file cell-shape
