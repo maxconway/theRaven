@@ -1,4 +1,4 @@
-run : fly cell-shape  
+run : fly cell-shape appearance species-properties 
 	smoldyn fly
 
 clean :
