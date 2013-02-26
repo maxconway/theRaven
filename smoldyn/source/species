@@ -10,17 +10,18 @@
 
 ##start
 #mol	amount	species	location
-mol	mbcd_num	mbcd	1 0 0
+mol	mbcd_num	mbcd	5-25 -5-5 -5-5
 
 #surfacemol	nmol	species	surface	pshape	panel
-#surface_mol	mbcd_num	mbcd	cellmembrane	hemi	front
+#surface_mol	mbcd_num	mbcd(back)	cellmembrane	hemi	head
 
 ##diffusion
 #	species	speed
-difc	mbcd	0
+difc	mbcd	mbcd_dif
 difc	pbcd	pbcd_dif
+drift	mbcd	mbcd_drift
 
 ##
-#		name		equation	rate
-reaction	bcd-trans	mbcd -> mbcd + pbcd	bcd_trans
-reaction	pbcd-deg	pbcd -> 0	pbcd_deg
+#		compartment	name		equation	rate
+reaction_cmpt	cytoplasm	bcd-trans	mbcd -> mbcd + pbcd	bcd_trans
+reaction_cmpt	cytoplasm	pbcd-deg	pbcd -> 0	pbcd_deg

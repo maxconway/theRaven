@@ -1,7 +1,11 @@
-pbicoid_profile <- read.table("./pbicoid_profile", quote="\"")
-colnames(pbicoid_profile) = c('time',seq.int(0,499,10))
-library("scatterplot3d","reshape2")
-m = melt(pbicoid_profile,id.vars="time")
+plot_profile <- function(file){
+library('reshape2')
+library('scatterplot3d')
+pbcd_profile = read.table(file,header=FALSE)
+colnames(pbcd_profile) = c('time',seq(from=50,to=500,by=50))
+m = melt(pbcd_profile,id.vars="time")
 res = dcast(data=m,formula = time + variable ~ .)
 colnames(res) = c('time','distance','concentration')
-with(res,scatterplot3d(distance,time,concentration,pch='.'))
+with(subset(res,time==8460),plot(distance,concentration),'.')
+with(res,scatterplot3d(distance,time,concentration,pch='o'))
+}
