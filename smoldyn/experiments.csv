@@ -1,0 +1,2 @@
+name	endtime	length	radius	cylinder_end	halfLength	coreRadius	pbcd_dif	mbcd_num	bcd_trans	pbcd_deg	mbcd_deg	mbcd_diff	nuclear_absorption_speed	resultfile1	resultfile2
+default	10000	500	100	400	250	75	7.4	50	0.4	0.0333333	0	0	0	default1.result	default2.result

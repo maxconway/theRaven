@@ -1,4 +1,16 @@
-fly is top-level file
-cell-shape defines the appearance and properties of the cell membrane (size is controlled in fly)
-species-appearance gives the list of species that are present, and their appearance
-species-properties gives the properties of the species
+-fly is smoldyn loading file
+-makefile is makefile
+-parameters is default parameters
+-readme is this
+-experiment.csv is all tests to be done
+-generate_params.py uses experiment.csv to populate ./experiments
+-./experiments contains parameter sets to be iterated over
+-./results contains results
+-./source contains:
+	cell-shape defines the appearance and properties of the cell membrane
+	cell-core allows exclusion of mRNA from the core
+	logging controls what's measured
+	nuclei holds a list of nuclei to absorb proteins
+	runtime is the changes made while the code runs
+	species sets properties of the species
+	appearance contains everything related to graphics

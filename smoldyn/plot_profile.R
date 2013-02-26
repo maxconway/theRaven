@@ -1,0 +1,7 @@
+pbicoid_profile <- read.table("./pbicoid_profile", quote="\"")
+colnames(pbicoid_profile) = c('time',seq.int(0,499,10))
+library("scatterplot3d","reshape2")
+m = melt(pbicoid_profile,id.vars="time")
+res = dcast(data=m,formula = time + variable ~ .)
+colnames(res) = c('time','distance','concentration')
+with(res,scatterplot3d(distance,time,concentration,pch='.'))

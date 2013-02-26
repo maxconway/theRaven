@@ -1,0 +1,10 @@
+#logging
+#Command			Run
+cmd i 0 endtime 50 	molcountspace pbcd 0 0 length 50 -radius radius -radius radius 0 resultfile1
+cmd i 54000 4320000	540000	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
+cmd @ 4920000	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
+cmd @ 5520000	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
+cmd @ 6180000	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
+cmd @ 6900000	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
+cmd @ 7680000	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
+cmd @ 8460000	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2

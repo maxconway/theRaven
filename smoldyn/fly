@@ -6,27 +6,41 @@ Drosophila embryo simulation
 dim 3
 
 # species list
-species mbcd pbcd nucleus
+species mbcd pbcd
+
+#parameters
+define_global	params	default.params
+define_global	halfLength	250
+define_global	pbcd_deg	0.0333333
+define_global	mbcd_deg	0
+define_global	name	default
+define_global	mbcd_num	50
+define_global	pbcd_dif	7.4
+define_global	resultfile2	default2.result
+define_global	resultfile1	default1.result
+define_global	mbcd_diff	0
+define_global	length	500
+define_global	radius	100
+define_global	coreRadius	75
+define_global	endtime	10000
+define_global	cylinder_end	400
+define_global	nuclear_absorption_speed	0
+define_global	bcd_trans	0.4
 
 #load files
-read_file parameters
-read_file cell-shape
-read_file cell-core
-read_file species-properties
-read_file runtime
+read_file ./source/cell-shape
+read_file ./source/cell-core
+read_file ./source/species
+read_file ./source/runtime
+read_file ./source/logging
+read_file ./source/appearance
+
+#output
+output_root ./results/
+output_files resultfile1 resultfile2
 
 time_start 0
 time_stop endtime
 time_step 5
-
-#output
-output_root ../results/
-output_files pbcd_profile
-
-#logging
-read_file logging
-
-#graphics
-read_file appearance
 
 end_file
