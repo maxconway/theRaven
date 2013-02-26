@@ -1,0 +1,17 @@
+# parameters
+define_global	endtime	10000
+define_global	length	500
+define_global	radius	100
+
+define_global 	cyliner_end	400	#should = length-radius
+define_global	halfLength	250	#==length/2
+define_global	coreRadius	75	#==radius-25
+
+define_global	pbcd_dif	7.4	#7.4 micrometers^2/s
+define_global	mbcd_num	50	#num
+define_global	bcd_trans	0.4	#s^-1
+define_global	pbcd_deg	0.000333333	#pbcd_deg*60000 = bcd_trans*mbcd_num = 0.02/min #s^-1
+define_global	mbcd_deg	0	#30 min half life
+define_global	mbcd_dif	0	#diffusion
+
+define_global	nuclear-absorption-speed	anumber

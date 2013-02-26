@@ -1,7 +1,7 @@
-$$nucleus properties
+##nucleus properties
 
 #diffusion
 difc nucleus 0
 
 #reactions
-reaction	pbicoid-absorption	nucleus + pbicoid -> nucleus	nuclear-absorption-speed
+reaction	pbcd-absorption	nucleus + pbcd -> nucleus	nuclear-absorption-speed

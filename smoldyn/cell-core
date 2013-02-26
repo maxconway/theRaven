@@ -3,8 +3,8 @@
 define coreRadius	radius-25
 
 start_surface cellcorewall
-action all both reflect
-color both purple 1
+action mbcd both reflect
+color both purple 0
 polygon both edge
 panel hemi radius 0 0 coreRadius 1 0 0 20 10
 panel cyl radius 0 0 cyliner_end 0 0 coreRadius 20 20
