@@ -1,0 +1,33 @@
+/*
+Drosophila embryo simulation
+	units are micron-second
+*/
+
+dim 3
+
+# species list
+species mbcd pbcd mcad pcad boundmcad
+
+#parameters
+RePlAcEmE
+
+#output
+output_root ./results/
+output_files resultfile1
+output_files resultfile2
+
+time_start 0
+time_stop endtime
+time_step 10
+
+#load files
+read_file ./source/cell-shape
+read_file ./source/cell-core
+read_file ./source/species
+read_file ./source/run1
+read_file ./source/run2
+read_file ./source/logging
+#read_file ./source/appearance
+
+
+end_file

@@ -3,3 +3,8 @@ clean :
 
 run : ./source/*
 	smoldyn fly
+
+
+
+
+

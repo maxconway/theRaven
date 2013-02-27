@@ -6,7 +6,7 @@ Drosophila embryo simulation
 dim 3
 
 # species list
-species mbcd pbcd
+species mbcd pbcd mcad pcad boundmcad
 
 #parameters
 define_global	params	highdifs.params

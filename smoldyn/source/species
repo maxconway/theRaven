@@ -19,12 +19,12 @@ mol	mbcd_num	mbcd	5-25 -5-5 -5-5
 #	species	speed
 difc	mbcd	mbcd_dif
 difc	pbcd	pbcd_dif
-drift	mbcd	mbcd_drift
+drift	mbcd	mbcd_drift 0 0
 
 ##
 #		compartment	name		equation	rate
 reaction_cmpt	cytoplasm	bcd-trans	mbcd -> mbcd + pbcd	bcd_trans
 reaction_cmpt	cytoplasm	pbcd-deg	pbcd -> 0	pbcd_deg
-reaction_cmpt	cytoplasm	mcadbind	pbcd + mcad -> boundmcad	mcadbinding
-reaction_cmpt	cytoplasm	mcadunbind	boundmcad -> pbcd + mcad 	mcadunbinding
-reaction_cmpt	cytoplasm	cad-trans	mcad -> mcad + pcad 	cad_trans
+#reaction_cmpt	cytoplasm	mcadbind	pbcd + mcad -> boundmcad	mcadbinding
+#reaction_cmpt	cytoplasm	mcadunbind	boundmcad -> pbcd + mcad 	mcadunbinding
+#reaction_cmpt	cytoplasm	cad-trans	mcad -> mcad + pcad 	cad_trans
