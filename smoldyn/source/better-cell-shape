@@ -1,6 +1,6 @@
 ##### cell shape
 
-boundaries 0 -200 length
+boundaries 0 0 length
 boundaries 1 -radius radius
 boundaries 2 -radius radius
 
@@ -8,9 +8,7 @@ start_surface cellmembrane
 action all both reflect
 color both purple 1
 polygon both edge
-panel hemi radius 0 0 radius 1 0 0 20 10	head
-panel cyl radius 0 0 cylinder_end 0 0 radius 20 20
-panel hemi cylinder_end 0 0 radius -1 0 0 20 10	
+read_file ./source/better-cell-shape-panels
 end_surface
 
 start_compartment cytoplasm

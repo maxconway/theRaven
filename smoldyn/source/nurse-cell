@@ -1,8 +1,6 @@
 ##### nurse cell
 #not done, still needs binding
 
-boundaries 0 -doubleradius length
-
 start_surface nursemembrane
 action mbcd both transmit
 color both purple 1
@@ -14,4 +12,3 @@ start_compartment nursecytoplasm
 surface nursemembrane
 point -radius 0 0
 end_compartment
-

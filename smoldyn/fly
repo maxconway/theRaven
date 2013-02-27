@@ -9,31 +9,36 @@ dim 3
 species mbcd pbcd mcad pcad boundmcad
 
 #parameters
-define_global	params	highdifs.params
-define_global	halfLength	250
-define_global	pbcd_deg	0.0003333
+define_global	params	default.params
 define_global	mbcd_deg	0
-define_global	name	highdifs
-define_global	mbcd_num	70000
 define_global	pbcd_dif	7.4
-define_global	mbcd_dif	0.01
-define_global	resultfile3	highdifs-3.result
-define_global	resultfile2	highdifs-2.result
-define_global	resultfile1	highdifs-1.result
-define_global	nuclear_absorption_speed	0
-define_global	length	500
+define_global	mcadbinding	1
 define_global	radius	100
-define_global	coreRadius	75
-define_global	endtime	8461
+define_global	run1	none
+define_global	halfLength	250
+define_global	run2	none
+define_global	resultfile1	test1
+define_global	resultfile2	test2
+define_global	mbcd_dif	0
+define_global	cad_trans	0.5
+define_global	nuclear_absorption_speed	0
+define_global	mbcd_num	70
+define_global	doubleradius	200
+define_global	endtime	10000
+define_global	bcd_trans	0.5
+define_global	pbcd_deg	0.0333333
+define_global	name	default
 define_global	cylinder_end	400
-define_global	mbcd_drift	0.01 0 0
-define_global	bcd_trans	0.0042
+define_global	length	500
+define_global	coreRadius	75
+define_global	mcadunbinding	0
+define_global	mbcd_drift	0
+
 
 #output
 output_root ./results/
-output_files resultfile1 
+output_files resultfile1
 output_files resultfile2
-output_files resultfile3
 
 time_start 0
 time_stop endtime
@@ -41,10 +46,12 @@ time_step 10
 
 #load files
 read_file ./source/cell-shape
-#read_file ./source/cell-core
+read_file ./source/cell-core
 read_file ./source/species
-#read_file ./source/runtime
+read_file ./source/run1
+read_file ./source/run2
 read_file ./source/logging
-#read_file ./source/appearance
+read_file ./source/appearance
+
 
 end_file

@@ -1,20 +1,20 @@
-name	endtime	length	radius	cylinder_end	halfLength	coreRadius	pbcd_dif	mbcd_num	bcd_trans	pbcd_deg	mbcd_deg	mbcd_dif	mbcd_drift	mcadbinding	mcadunbinding	cad_trans	nuclear_absorption_speed	run1	run2	resultfile1	resultfile2
-default	10000	500	100	400	250	75	7.4	70000	0.4	0.0333333	0	0	0	0	0	0	0	none	none	default-pbcd.result	default-mbcd.result
-model1	8461	500	100	400	250	75	10	70000	0.4	0.00041	0	0	0	0	0	0	0	none	none	model1-pbcd.result	model1-mbcd.result
-model2	8461	500	100	400	250	75	5	70000	1.4	0.000041	0	0	0	0	0	0	0	none	none	model2-pbcd.result	model2-mbcd.result
-model4	8461	500	100	400	250	75	3	70000	2.4	0.00166667	0	0	0	0	0	0	0	none	none	model4-pbcd.result	model4-mbcd.result
-lowdif	8461	500	100	400	250	75	0.3	70000	3.4	0.0003333	0	0	0	0	0	0	0	none	none	lowdif-pbcd.result	lowdif-mbcd.result
-highdif	8461	500	100	400	250	75	7.4	70000	4.4	0.0003333	0	0	0	0	0	0	0	none	none	highdif-pbcd.result	highdif-mbcd.result
-lowdifs	8461	500	100	400	250	75	0.3	70000	5.4	0.0003333	0	0.01	0.01	0	0	0	0	none	none	lowdifs-pbcd.result	lowdifs-mbcd.result
-highdifs	8461	500	100	400	250	75	7.4	70000	6.4	0.0003333	0	0.01	0.01	0	0	0	0	none	none	highdifs-pbcd.result	highdifs-mbcd.result
-lowdifsl	8461	500	100	400	250	75	0.3	70000	5.4	0.0003333	0	0	0	0	0	0	0	none	mbcd_dif_1620s	lowdifsl-pbcd.result	lowdifsl-mbcd.result
-highdifsl	8461	500	100	400	250	75	7.4	70000	6.4	0.0003333	0	0	0	0	0	0	0	none	mbcd_dif_1620s	highdifsl-pbcd.result	highdifsl-mbcd.result
-model1-c	8461	500	100	400	250	75	10	70000	0	0.00041	0	0	0	0	0	0	0	changing_trans	none	model1-c-pbcd.result	model1-c-mbcd.result
-model2-c	8461	500	100	400	250	75	5	70000	0	0.000041	0	0	0	0	0	0	0	changing_trans	none	model2-c-pbcd.result	model2-c-mbcd.result
-model4-c	8461	500	100	400	250	75	3	70000	0	0.00166667	0	0	0	0	0	0	0	changing_trans	none	model4-c-pbcd.result	model4-c-mbcd.result
-Lowdif-c	8461	500	100	400	250	75	0.3	70000	0	0.0003333	0	0	0	0	0	0	0	changing_trans	none	Lowdif-c-pbcd.result	Lowdif-c-mbcd.result
-Highdif-c	8461	500	100	400	250	75	7.4	70000	0	0.0003333	0	0	0	0	0	0	0	changing_trans	none	Highdif-c-pbcd.result	Highdif-c-mbcd.result
-Lowdifs-c	8461	500	100	400	250	75	0.3	70000	0	0.0003333	0	0.01	0.01	0	0	0	0	changing_trans	none	Lowdifs-c-pbcd.result	Lowdifs-c-mbcd.result
-Highdifs-c	8461	500	100	400	250	75	7.4	70000	0	0.0003333	0	0.01	0.01	0	0	0	0	changing_trans	none	Highdifs-c-pbcd.result	Highdifs-c-mbcd.result
-Lowdifsl-c	8461	500	100	400	250	75	0.3	70000	0	0.0003333	0	0	0	0	0	0	0	changing_trans	mbcd_dif_1620s	Lowdifsl-c-pbcd.result	Lowdifsl-c-mbcd.result
-Highdifsl-c	8461	500	100	400	250	75	7.4	70000	0	0.0003333	0	0	0	0	0	0	0	changing_trans	mbcd_dif_1620s	Highdifsl-c-pbcd.result	Highdifsl-c-mbcd.result
+name	endtime	length	doubleradius	radius	cylinder_end	halfLength	coreRadius	pbcd_dif	mbcd_num	bcd_trans	pbcd_deg	mbcd_deg	mbcd_dif	mbcd_drift	mcadbinding	mcadunbinding	cad_trans	nuclear_absorption_speed	run1	run2	resultfile1	resultfile2
+default	10000	500	200	100	400	250	75	7.4	70	0.5	0.0333333	0	0	0	0	0	0	0	none	none	default-pbcd.result	default-mbcd.result
+model1	8461	500	200	100	400	250	75	10	70	0.5	0.00041	0	0	0	0	0	0	0	none	none	model1-pbcd.result	model1-mbcd.result
+model2	8461	500	200	100	400	250	75	5	70	0.5	0.000041	0	0	0	0	0	0	0	none	none	model2-pbcd.result	model2-mbcd.result
+model4	8461	500	200	100	400	250	75	3	70	0.5	0.00166667	0	0	0	0	0	0	0	none	none	model4-pbcd.result	model4-mbcd.result
+lowdif	8461	500	200	100	400	250	75	0.3	70	0.5	0.0003333	0	0	0	0	0	0	0	none	none	lowdif-pbcd.result	lowdif-mbcd.result
+highdif	8461	500	200	100	400	250	75	7.4	70	0.5	0.0003333	0	0	0	0	0	0	0	none	none	highdif-pbcd.result	highdif-mbcd.result
+lowdifs	8461	500	200	100	400	250	75	0.3	70	0.5	0.0003333	0	0.01	0.01	0	0	0	0	none	none	lowdifs-pbcd.result	lowdifs-mbcd.result
+highdifs	8461	500	200	100	400	250	75	7.4	70	0.5	0.0003333	0	0.01	0.01	0	0	0	0	none	none	highdifs-pbcd.result	highdifs-mbcd.result
+lowdifsl	8461	500	200	100	400	250	75	0.3	70	0.5	0.0003333	0	0	0	0	0	0	0	none	mbicoid_dif_1620s	lowdifsl-pbcd.result	lowdifsl-mbcd.result
+highdifsl	8461	500	200	100	400	250	75	7.4	70	0.5	0.0003333	0	0	0	0	0	0	0	none	mbicoid_dif_1620s	highdifsl-pbcd.result	highdifsl-mbcd.result
+model1-c	8461	500	200	100	400	250	75	10	70	0	0.00041	0	0	0	0	0	0	0	changing_trans	none	model1-c-pbcd.result	model1-c-mbcd.result
+model2-c	8461	500	200	100	400	250	75	5	70	0	0.000041	0	0	0	0	0	0	0	changing_trans	none	model2-c-pbcd.result	model2-c-mbcd.result
+model4-c	8461	500	200	100	400	250	75	3	70	0	0.00166667	0	0	0	0	0	0	0	changing_trans	none	model4-c-pbcd.result	model4-c-mbcd.result
+Lowdif-c	8461	500	200	100	400	250	75	0.3	70	0	0.0003333	0	0	0	0	0	0	0	changing_trans	none	Lowdif-c-pbcd.result	Lowdif-c-mbcd.result
+Highdif-c	8461	500	200	100	400	250	75	7.4	70	0	0.0003333	0	0	0	0	0	0	0	changing_trans	none	Highdif-c-pbcd.result	Highdif-c-mbcd.result
+Lowdifs-c	8461	500	200	100	400	250	75	0.3	70	0	0.0003333	0	0.01	0.01	0	0	0	0	changing_trans	none	Lowdifs-c-pbcd.result	Lowdifs-c-mbcd.result
+Highdifs-c	8461	500	200	100	400	250	75	7.4	70	0	0.0003333	0	0.01	0.01	0	0	0	0	changing_trans	none	Highdifs-c-pbcd.result	Highdifs-c-mbcd.result
+Lowdifsl-c	8461	500	200	100	400	250	75	0.3	70	0	0.0003333	0	0	0	0	0	0	0	changing_trans	mbicoid_dif_1620s	Lowdifsl-c-pbcd.result	Lowdifsl-c-mbcd.result
+Highdifsl-c	8461	500	200	100	400	250	75	7.4	70	0	0.0003333	0	0	0	0	0	0	0	changing_trans	mbicoid_dif_1620s	Highdifsl-c-pbcd.result	Highdifsl-c-mbcd.result
