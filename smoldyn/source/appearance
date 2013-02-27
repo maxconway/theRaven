@@ -4,9 +4,18 @@ frame_thickness 0
 
 ##### colours and sizes
 # pbcd
-color pbcd black
+color pbcd blue
 display_size pbcd 3
 # mbcd
-color mbcd black
+color mbcd green
 display_size mbcd 3
+# mcad
+color mbcd orange
+display_size mbcd 3
+# pcad
+color mbcd red
+display_size mbcd 3
+# boundmcad
+color mbcd green
+display_size mbcd 0
 

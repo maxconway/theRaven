@@ -25,3 +25,6 @@ drift	mbcd	mbcd_drift
 #		compartment	name		equation	rate
 reaction_cmpt	cytoplasm	bcd-trans	mbcd -> mbcd + pbcd	bcd_trans
 reaction_cmpt	cytoplasm	pbcd-deg	pbcd -> 0	pbcd_deg
+reaction_cmpt	cytoplasm	mcadbind	pbcd + mcad -> boundmcad	mcadbinding
+reaction_cmpt	cytoplasm	mcadunbind	boundmcad -> pbcd + mcad 	mcadunbinding
+reaction_cmpt	cytoplasm	cad-trans	mcad -> mcad + pcad 	cad_trans
