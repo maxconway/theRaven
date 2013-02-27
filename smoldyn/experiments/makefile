@@ -23,4 +23,4 @@ run : ./results/default-pbcd.result ./results/default-mbcd.result ./results/mode
 	smoldyn highdifs.smol
 
 default.params highdif.params lowdif.params model4.params default.params lowdifs.params model1.params highdifs.params model2.params : ../experiments.csv ../generate_params.py
-	cd ..; generate_params.py
+	cd ..; ./generate_params.py
