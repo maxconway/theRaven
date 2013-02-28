@@ -6,15 +6,20 @@ Drosophila embryo simulation
 dim 3
 
 # species list
-species mbcd pbcd mcad pcad boundmcad
+species mbcd pbcd mcad pcad boundmcad mnos pnos boundmbicoid pbcd1 pbcd2 pbcd3 pbcd4 pbcd5 pbcd6 pbcd6phb1 pbcd6phb2
 
 #parameters
 RePlAcEmE
 
+#definitions
+define_global buckets 1000
+
 #output
+ifundefine pretty
 output_root ./results/
-output_files resultfile1
-output_files resultfile2
+else
+output_root ./tmp/
+endif
 
 time_start 0
 time_stop endtime
@@ -23,11 +28,16 @@ time_step 10
 #load files
 read_file ./source/cell-shape
 read_file ./source/cell-core
-read_file ./source/species
 read_file ./source/run1
 read_file ./source/run2
-read_file ./source/logging
-#read_file ./source/appearance
+read_file ./source/bicoid
+read_file ./source/more_source1
+read_file ./source/more_source2
+read_file ./source/more_source3
+read_file ./source/more_source4
 
+ifdefine pretty
+read_file ./source/appearance
+endif
 
 end_file

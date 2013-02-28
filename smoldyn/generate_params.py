@@ -1,7 +1,12 @@
 #!/usr/bin/python
+import sys
 import csv
 
-with open('experiments.csv', 'rb') as csvfile:
+##args:
+#filename
+
+
+with open('./'+sys.argv[1], 'rb') as csvfile:
 	reader = csv.DictReader(csvfile,delimiter='	')
 	for row in reader:
 		with open('./experiments/'+row['name']+'.params','w') as output:
