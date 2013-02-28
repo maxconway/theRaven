@@ -1,0 +1,36 @@
+##properties of caudal
+#diffusion
+difc	mcad	0.01
+difc	pcad	5
+
+#creation
+compartment_mol	mcad_num	mcad	cytoplasm
+
+#reactions
+reaction_cmpt	cytoplasm	mcadbind	pbcd + mcad -> boundmcad	mcad_binding
+reaction_cmpt	cytoplasm	mcadunbind	boundmcad -> mcad + pbcd	mcad_unbinding
+reaction_cmpt	cytoplasm	cad-trans	mcad -> mcad + pcad	cad_trans
+reaction_cmpt	cytoplasm	pcad-deg	pcad -> 0	pcad_deg
+
+#logging mcad
+define molecule mcad
+outfile name-molecule.result
+cmd i 540 4320 540	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 4920	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 5520	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 6180	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 6900	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 7680	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 8460	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+
+#logging pcad
+undefine molecule
+define molecule pcad
+outfile name-molecule.result
+cmd i 540 4320 540	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 4920	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 5520	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 6180	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 6900	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 7680	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
+cmd @ 8460	molcountspace molecule 0 0 length 10 -radius radius -radius radius 0 name-molecule.result
