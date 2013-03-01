@@ -3,48 +3,63 @@ graphics opengl
 frame_thickness 0
 
 ##### colours and sizes
-# pbcd
-color pbcd blue
-display_size pbcd 3
+# pbcd(blue)
+color pbcd 0.6 0.8 1
+display_size pbcd 1
 # mbcd
-color mbcd green
-display_size mbcd 3
-# mcad
-color mcad orange
-display_size mcad 3
+color mbcd 0 0 0.8
+display_size mbcd 1
+# boundmbcd
+color boundmbcd 0 0 0.2
+display_size boundmbcd 1
+# mcad(pink)
+color mcad 0.8 0 0.4
+display_size mcad 1
 # pcad
-color pcad red
-display_size pcad 3
+color pcad 1 0.4 0.699
+display_size pcad 1
 # boundmcad
-color boundmcad green
-display_size boundmcad 0
-#mnos
-color mnos green
-display_size mnos 3
+color boundmcad 0.4 0 0.2 
+display_size boundmcad 1
+#mnos(green)
+color mnos 0 0.4 0
+display_size mnos 1
 #pnos
-color mbcd green
-display_size mbcd 3
-#mhb
-color mbcd green
-display_size mbcd 3
+color pnos 0.4 0.8 0
+display_size mnos 1
+#mhb(red)
+color mhb 0.8 0 0 
+display_size mhb 1
 #phb
-color mbcd green
-display_size mbcd 3
+color phb 1 0.4 0.4
+display_size phb 1
+#boundmhb
+color phb 0.6 0 0 
+display_size phb 1
 #pbcd1
-color mbcd green
-display_size mbcd 3
+color pbcd1 1 1 0.8 
+display_size pbcd1 1
 #pbcd2
-color mbcd green
-display_size mbcd 3
+color pbcd2 1 0.898 0.8
+display_size pbcd2 1
 #pbcd3
-color mbcd green
-display_size mbcd 3
+color pbcd3 1 0.8 0.6
+display_size pbcd3 1
 #pbcd4
-color mbcd green
-display_size mbcd 3
+color pbcd4 1 0.699 0.4
+display_size pbcd4 1
 #pbcd5
-color mbcd green
-display_size mbcd 3
+color pbcd5 1 0.6 0.2
+display_size pbcd5 1
 #pbcd6
-color mbcd green
-display_size mbcd 3
+color pbcd6 1 0.502 0 
+display_size pbcd6 1
+#pbcd6phb1
+color pbcd6phb1 0.8 0.4 0 
+display_size pbcd6phb1 1
+#pbcd6phb2
+color pbcd6phb2 0.6 0.298 0 
+display_size pbcd6phb2 1
+#hbpromoter
+color hbpromoter 0 0 0
+display_size hbpromoter 0

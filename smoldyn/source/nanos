@@ -7,11 +7,10 @@ mol	mnos_num	mnos	475-495 -5-5 -5-5
 
 ##diffusion
 #	species	speed
-difc	mnos	mnos_dif
 difc	pnos	pnos_dif
-drift	mnos	mnos_drift 0 0
 
-##
+
+## reactions
 #		compartment	name		equation	rate
 reaction_cmpt	cytoplasm	nos-trans	mnos -> mnos + pnos nos_trans
 reaction_cmpt	cytoplasm	pnos-deg	pnos -> 0	pnos_deg
