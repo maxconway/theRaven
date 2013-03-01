@@ -1,5 +1,6 @@
 text_display time pbcd
-graphics opengl
+graphics opengl_good
+graphic_iter 20
 frame_thickness 0
 
 ##### colours and sizes
