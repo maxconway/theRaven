@@ -15,3 +15,8 @@ run : ./source/* ../fly-template ./results/default-mbcd.result ./results/model1-
 ./results/%-mbcd.result : %.smol
 	smoldyn $*.smol
 
+remove_results : 
+	rm -f *.smol ../results/*
+
+clean : remove_results
+	rm -f *.params *.smol
