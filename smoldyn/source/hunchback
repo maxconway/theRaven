@@ -13,7 +13,7 @@ reaction_cmpt	cytoplasm	hb-trans	mhb -> mhb + phb 	hb_trans
 reaction_cmpt	cytoplasm	phb-deg	phb -> 0	phb_deg
 
 #zygotic tanscription (start 0)
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd -> pbcd1	3070
+cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + hbpromoter -> pbcd1	3070
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd1 -> pbcd2	3947
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd2 -> pbcd3	4583
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd3 -> pbcd4	1195
@@ -28,7 +28,7 @@ cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd5 -> pbcd + pbcd4	1
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd4 -> pbcd + pbcd3	1
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd3 -> pbcd + pbcd2	1
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd2 -> pbcd + pbcd1	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd1 -> pbcd	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd1 -> pbcd + hbpromoter	1
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd1 -> mhb	0.4872
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd2 -> mhb	0.5955
 cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd3 -> mhb	0.7037

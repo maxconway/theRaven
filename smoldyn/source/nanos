@@ -1,0 +1,42 @@
+##nanos
+#mol	amount	species	location
+mol	mnos_num	mnos	475-495 -5-5 -5-5
+
+#surfacemol	nmol	species	surface	pshape	panel
+#surface_mol	mnos_num	mnos(back)	cellmembrane	hemi	head
+
+##diffusion
+#	species	speed
+difc	mnos	mnos_dif
+difc	pnos	pnos_dif
+drift	mnos	mnos_drift 0 0
+
+##
+#		compartment	name		equation	rate
+reaction_cmpt	cytoplasm	nos-trans	mnos -> mnos + pnos nos_trans
+reaction_cmpt	cytoplasm	pnos-deg	pnos -> 0	pnos_deg
+reaction_cmpt	cytoplasm	mbcdbind	mbcd + pnos ->	boundmbcd	mbcd_binding
+reaction_cmpt	cytoplasm	mbcdunbind	boundmbcd -> mbcd + pnos	mbcd_unbinding
+
+#logging mbcd
+define molecule mnos
+output_files name-molecule.result
+cmd i 540 4320 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+
+#logging pbcd
+undefine molecule
+define molecule pnos
+output_files name-molecule.result
+cmd i 540 4320 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name-molecule.result
