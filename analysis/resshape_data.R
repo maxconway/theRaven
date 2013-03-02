@@ -4,7 +4,7 @@ resshape_data <- function(file){
   colnames(pbcd_profile) = c('molecule','time',seq(from=2.5,to=500,by=2.5))
   m = melt(pbcd_profile,id.vars=c("time",'molecule'))
   res = dcast(data=m,formula = time + variable ~ molecule + .)
-  colnames(res) = c('molecule','time','distance','concentration')
-  res[3] = as.numeric(levels(res$distance))[res$distance]
+  colnames(res)[2]='distance'
+  res[2] = as.numeric(levels(res$distance))[res$distance]
   return(res)
 }
