@@ -1,18 +1,573 @@
-#logging
-#proteins
-cmd i 540 4320 540	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile1
-cmd @ 4920	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile1
-cmd @ 5520	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile1
-cmd @ 6180	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile1
-cmd @ 6900	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile1
-cmd @ 7680	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile1
-cmd @ 8460	molcountspace pbcd 0 0 length 10 -radius radius -radius radius 0 resultfile1
+define molecule mbcd
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
 
-#rna
-cmd i 540 4320 540	molcountspace mbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
-cmd @ 4920	molcountspace mbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
-cmd @ 5520	molcountspace mbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
-cmd @ 6180	molcountspace mbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
-cmd @ 6900	molcountspace mbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
-cmd @ 7680	molcountspace mbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
-cmd @ 8460	molcountspace mbcd 0 0 length 10 -radius radius -radius radius 0 resultfile2
+#logging pbcd
+undefine molecule
+define molecule pbcd
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging mcad
+undefine molecule
+define molecule mcad
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pcad
+undefine molecule
+define molecule pcad
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging mbcd
+undefine molecule
+define molecule mnos
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd
+undefine molecule
+define molecule pnos
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging boundmbcd
+undefine molecule
+define molecule boundmbcd
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging mhb
+undefine molecule
+define molecule mhb
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd
+undefine molecule
+define molecule pbcd
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd1
+undefine molecule
+define molecule pbcd1
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd2
+undefine molecule
+define molecule pbcd2
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd3
+undefine molecule
+define molecule pbcd3
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd4
+undefine molecule
+define molecule pbcd4
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd5
+undefine molecule
+define molecule pbcd5
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd6
+undefine molecule
+define molecule pbcd6
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd6phb1
+undefine molecule
+define molecule pbcd6phb1
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging pbcd6phb2
+undefine molecule
+define molecule pbcd6phb2
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+
+#logging boundmhb
+undefine molecule
+define molecule boundmhb
+cmd @ 540	echo name.result "molecule "
+cmd @ 540	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1080	echo name.result "molecule "
+cmd @ 1080	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 1620	echo name.result "molecule "
+cmd @ 1620	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2160	echo name.result "molecule "
+cmd @ 2160	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 2700	echo name.result "molecule "
+cmd @ 2700	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3240	echo name.result "molecule "
+cmd @ 3240	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 3780	echo name.result "molecule "
+cmd @ 3780	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4320	echo name.result "molecule "
+cmd @ 4320	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 4920	echo name.result "molecule "
+cmd @ 4920	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 5520	echo name.result "molecule "
+cmd @ 5520	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6180	echo name.result "molecule "
+cmd @ 6180	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 6900	echo name.result "molecule "
+cmd @ 6900	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 7680	echo name.result "molecule "
+cmd @ 7680	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
+cmd @ 8460	echo name.result "molecule "
+cmd @ 8460	molcountspace molecule 0 0 length buckets -radius radius -radius radius 0 name.result
