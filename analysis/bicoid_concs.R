@@ -6,11 +6,11 @@
 flyex = read.table(file='bicoid-cycle13',header=T,sep=' ')
 flyex$time = rep(x=8460,times=length(flyex))
 flyex$distance = flyex$xcoord*5
-flyex$Bicoid = flyex$intensity*100*1.9
-flyex$stddev = flyex$stddev*100*1.9
+flyex$Bicoid = flyex$intensity*40*1.9
+flyex$stddev = flyex$stddev*40*1.9
 
 ##
-with(flyex,plot(distance,Bicoid,'l',col='black',ylim=c(0,50000),main='Fig.2: Diffusion rates'),xlab='distance (μm)',ylab='molecules/2.5μm')
+with(flyex,plot(distance,Bicoid,'l',col='black',ylim=c(0,20000),main='Fig.2: Diffusion rates'),xlab='distance (μm)',ylab='molecules/μm')
 with(flyex,lines(distance,Bicoid+stddev,'l',col='grey'))
 with(flyex,lines(distance,Bicoid-stddev,'l',col='grey'))
 legend('topright',c('literature','7.4μm²/s','4μm²/s','0.3μm²/s'),col=c('black','darkblue','dodgerblue','aquamarine'),pch=c('-','-','-','-'))
@@ -23,7 +23,7 @@ with(high[high$time==8460,],lines(distance,Bicoid,'l',col='darkblue'))
 with(medium[medium$time==8460,],lines(distance,Bicoid,'l',col='dodgerblue'))
 with(low[low$time==8460,],lines(distance,Bicoid,'l',col='aquamarine'))
 ##
-with(flyex,plot(distance,Bicoid,'l',col='black',ylim=c(0,50000),main='Fig.3: Dynamic models at diffusion = 4μm²/s'),xlab='distance (μm)',ylab='molecules/2.5μm')
+with(flyex,plot(distance,Bicoid,'l',col='black',ylim=c(0,20000),main='Fig.3: Dynamic models at diffusion = 4μm²/s'),xlab='distance (μm)',ylab='molecules/μm')
 with(flyex,lines(distance,Bicoid+stddev,'l',col='grey'))
 with(flyex,lines(distance,Bicoid-stddev,'l',col='grey'))
 text=c('literature','Increasing translation rate','mRNA diffusion from fertilization','mRNA diffusion from cycle 3')
@@ -37,7 +37,7 @@ with(changing_trans[changing_trans$time==8460,],lines(distance,Bicoid,'l',col='r
 with(gradient0[gradient0$time==8460,],lines(distance,Bicoid,'l',col='olivedrab'))
 with(gradient3[gradient3$time==8460,],lines(distance,Bicoid,'l',col='forestgreen'))
 ##
-with(flyex,plot(distance,Bicoid,'l',col='black',ylim=c(0,50000),main='Fig.4: Complete model'),xlab='distance (μm)',ylab='molecules/2.5μm')
+with(flyex,plot(distance,Bicoid,'l',col='black',ylim=c(0,20000),main='Fig.4: Complete model'),xlab='distance (μm)',ylab='molecules/μm')
 with(flyex,lines(distance,Bicoid+stddev,'l',col='grey'))
 with(flyex,lines(distance,Bicoid-stddev,'l',col='grey'))
 
