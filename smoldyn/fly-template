@@ -24,7 +24,7 @@ endif
 
 time_start 0
 time_stop endtime
-time_step 10
+time_step timestep
 
 #load files
 read_file ./source/cell-shape
