@@ -36,7 +36,7 @@ read_file ./source/more_source1
 read_file ./source/more_source2
 read_file ./source/more_source3
 read_file ./source/more_source4
-read_file ./logging
+read_file ./source/logging
 
 ifdefine pretty
 read_file ./source/appearance

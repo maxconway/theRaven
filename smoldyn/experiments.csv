@@ -24,5 +24,5 @@ Highdifs-c	8461	500	200	100	400	250	75	7.4	700	1	0.0003333	0	0.01	0.01	0	0	0	0	0
 Lowdifsl-c	8461	500	200	100	400	250	75	0.3	700	1	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
 Middifsl-c	8461	500	200	100	400	250	75	4	700	1	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
 Highdifsl-c	8461	500	200	100	400	250	75	7.4	700	1	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
-bcd_nos	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	700	7.4	0.5	0.00033333	0.5	0.5	0	0	0	0	0	0	0	nanos	none	none	none	0	none	none
+Bcd-nos	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	700	7.4	0.5	0.00033333	0.5	0.5	0	0	0	0	0	0	0	nanos	none	none	none	0	none	none
 Middifsl-c-nos	8461	500	200	100	400	250	75	4	700	1	0.0003333	0	0	0	0	0	0	0	0	0	0	700	7.4	0.5	0.00033333	0.5	0.5	0	0	0	0	0	0	0	nanos	none	none	none	0	changing_trans	mbicoid_dif_1620s

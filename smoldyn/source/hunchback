@@ -13,33 +13,29 @@ reaction_cmpt	cytoplasm	hb-trans	mhb -> mhb + phb 	hb_trans
 reaction_cmpt	cytoplasm	phb-deg	phb -> 0	phb_deg
 
 #zygotic tanscription (start 0)
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + hbpromoter -> pbcd1	3070
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd1 -> pbcd2	3947
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd2 -> pbcd3	4583
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd3 -> pbcd4	1195
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd4 -> pbcd5	1831
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd + pbcd5 -> pbcd6	2127
-cmd @ 4920 set	reaction_cmpt	cytoplasm	phb + pbcd6 -> pbcd6phb1	3000
-cmd @ 4920 set	reaction_cmpt	cytoplasm	phb + pbcd6phb1 -> pbcd6phb2	3000
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd6phb2 -> phb + pbcd6phb1 	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd6phb1 -> phb + pbcd6	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd6 -> pbcd + pbcd5	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd5 -> pbcd + pbcd4	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd4 -> pbcd + pbcd3	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd3 -> pbcd + pbcd2	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd2 -> pbcd + pbcd1	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd1 -> pbcd + hbpromoter	1
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd1 -> mhb	0.4872
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd2 -> mhb	0.5955
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd3 -> mhb	0.7037
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd4 -> mhb	1.0285
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd5 -> mhb	1.3244
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd6 -> mhb	1.3244
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd6phb1 -> mhb	1.7183
-cmd @ 4920 set	reaction_cmpt	cytoplasm	pbcd6phb2 -> mhb	8.4267
-
-
-
-cmd @ 4920 set zhb_transc 1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bindbcd1	pbcd + hbpromoter -> pbcd1	3070
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bindbcd2	pbcd + pbcd1 -> pbcd2	3947
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bindbcd3	pbcd + pbcd2 -> pbcd3	4583
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bindbcd4	pbcd + pbcd3 -> pbcd4	1195
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bindbcd5	pbcd + pbcd4 -> pbcd5	1831
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bindbcd6	pbcd + pbcd5 -> pbcd6	2127
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bind6bcd1	phb + pbcd6 -> pbcd6phb1	3000
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bind6bcd2	phb + pbcd6phb1 -> pbcd6phb2	3000
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbind6bcd	pbcd6phb2 -> phb + pbcd6phb1 	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbind6bcd1	pbcd6phb1 -> phb + pbcd6	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbindbcd6	pbcd6 -> pbcd + pbcd5	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbindbcd5	pbcd5 -> pbcd + pbcd4	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbindbcd4	pbcd4 -> pbcd + pbcd3	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbindbcd3	pbcd3 -> pbcd + pbcd2	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbindbcd2	pbcd2 -> pbcd + pbcd1	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	unbindbcd1	pbcd1 -> pbcd + hbpromoter	1
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcd1hb	pbcd1 -> mhb	0.4872
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcd2hb	pbcd2 -> mhb	0.5955
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcd3hb	pbcd3 -> mhb	0.7037
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcd4hb	pbcd4 -> mhb	1.0285
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcd5hb	pbcd5 -> mhb	1.3244
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcd6hb	pbcd6 -> mhb	1.3244
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcdhb1hb	pbcd6phb1 -> mhb	1.7183
+cmd @ 4920 set	reaction_cmpt	cytoplasm	bcdhb2hb	pbcd6phb2 -> mhb	8.4267
 
 end_file
