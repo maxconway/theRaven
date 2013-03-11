@@ -1,15 +1,15 @@
-cmd b setrateint bcd-trans 0.238095238095238
-cmd @ 600 setrateint bcd-trans 0.289115646258503
-cmd @ 1200 setrateint bcd-trans 0.340136054421769
-cmd @ 1800 setrateint bcd-trans 0.391156462585034
-cmd @ 2400 setrateint bcd-trans 0.442176870748299
-cmd @ 3000 setrateint bcd-trans 0.493197278911565
-cmd @ 3600 setrateint bcd-trans 0.54421768707483
-cmd @ 4200 setrateint bcd-trans 0.595238095238095
-cmd @ 4800 setrateint bcd-trans 0.64625850340136
-cmd @ 5400 setrateint bcd-trans 0.697278911564626
-cmd @ 6000 setrateint bcd-trans 0.748299319727891
-cmd @ 6600 setrateint bcd-trans 0.799319727891156
-cmd @ 7200 setrateint bcd-trans 0.850340136054422
-cmd @ 7800 setrateint bcd-trans 0.901360544217687
-cmd @ 8400 setrateint bcd-trans 0.952380952380952
+cmd @ 0 set	reaction_rate bcd-trans 0.238095238095238
+cmd @ 600 set	reaction_rate bcd-trans 0.289115646258503
+cmd @ 1200 set	reaction_rate bcd-trans 0.340136054421769
+cmd @ 1800 set	reaction_rate bcd-trans 0.391156462585034
+cmd @ 2400 set	reaction_rate bcd-trans 0.442176870748299
+cmd @ 3000 set	reaction_rate bcd-trans 0.493197278911565
+cmd @ 3600 set	reaction_rate bcd-trans 0.54421768707483
+cmd @ 4200 set	reaction_rate bcd-trans 0.595238095238095
+cmd @ 4800 set	reaction_rate bcd-trans 0.64625850340136
+cmd @ 5400 set	reaction_rate bcd-trans 0.697278911564626
+cmd @ 6000 set	reaction_rate bcd-trans 0.748299319727891
+cmd @ 6600 set	reaction_rate bcd-trans 0.799319727891156
+cmd @ 7200 set	reaction_rate bcd-trans 0.850340136054422
+cmd @ 7800 set	reaction_rate bcd-trans 0.901360544217687
+cmd @ 8400 set	reaction_rate bcd-trans 0.952380952380952
