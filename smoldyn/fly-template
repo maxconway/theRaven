@@ -4,6 +4,7 @@ Drosophila embryo simulation
 */
 
 dim 3
+max_cmd 20000
 
 # species list
 species mbcd pbcd mcad pcad boundmcad mnos pnos boundmbcd mhb phb boundmhb pbcd1 pbcd2 pbcd3 pbcd4 pbcd5 pbcd6 pbcd6phb1 pbcd6phb2 hbpromoter
@@ -17,9 +18,13 @@ define_global buckets 200
 #output
 ifundefine pretty
 output_root ./results_temp/
-output_files name.result
 else
 output_root ./tmp/
+endif
+output_files name.result
+ifdefine DEBUGGING
+cmd b molcountheader 
+cmd I 0 endtime 1 molcount
 endif
 
 time_start 0
