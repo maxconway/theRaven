@@ -6,9 +6,11 @@ resshape_data <- function(file){
   res = dcast(data=m,formula = time + variable ~ molecule + .,fun.aggregate=mean)
   colnames(res)[2]='distance'
   res[2] = as.numeric(levels(res$distance))[res$distance]
-    res$Bicoid = 40*with(res,1*pbcd+1*pbcd1+2*pbcd2+3*pbcd3+4*pbcd4+5*pbcd5+6*pbcd6+6*(pbcd6phb1+pbcd6phb2))
-    res$Hunchback = 40*with(res,1*pbcd6phb1+2*pbcd6phb2)
-    res$Caudal = 40*with(res,pcad)
-    res$Nanos = 40*with(res,1*pnos+1*boundmhb+1*boundmbcd)
+  
+  try({res$Bicoid = 40*with(res,1*pbcd+1*pbcd1+2*pbcd2+3*pbcd3+4*pbcd4+5*pbcd5+6*pbcd6+6*(pbcd6phb1+pbcd6phb2))})
+  try({res$Hunchback = 40*with(res,1*phb+1*pbcd6phb1+2*pbcd6phb2)})
+  try({res$Caudal = 40*with(res,pcad)})
+  try({res$Nanos = 40*with(res,1*pnos+1*boundmhb+1*boundmbcd)})
+  
   return(res)
 }

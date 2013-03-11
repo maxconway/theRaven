@@ -1,6 +1,7 @@
 plot_profile <- function(file,mol){
 require('scatterplot3d')
 require('TeachingDemos')
+require('lattice')
 source('resshape_data.R')
 res = resshape_data(file)
 #with(subset(res,time==8460),plot(distance,concentration),'.',main='at end')
