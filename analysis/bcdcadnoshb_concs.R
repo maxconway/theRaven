@@ -1,6 +1,6 @@
 model = resshape_data('./results/Cadnoshb-transc3e4t5.result')
 
-plot(0,ylim=c(0,1000000),xlim=c(0,500),main='Fig.7: Bicoid, Nanos, Caudal, Hunchback',xlab='distance (μm)',ylab='molecules/μm')
+plot(0,ylim=c(0,1000000),xlim=c(0,500),main='Fig.7: Bicoid, Nanos, Caudal, Hunchback',xlab='distance (μm)',ylab='molecules (μm⁻¹)')
 
 text=c('Bicoid','Nanos','Caudal','Hunchback')
 legend('topright',text,col=c('blue','green','red','pink'),pch=c('-','-'))

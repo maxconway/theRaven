@@ -7,10 +7,10 @@ resshape_data <- function(file){
   colnames(res)[2]='distance'
   res[2] = as.numeric(levels(res$distance))[res$distance]
   
-  try({res$Bicoid = 40*with(res,1*pbcd+1*pbcd1+2*pbcd2+3*pbcd3+4*pbcd4+5*pbcd5+6*pbcd6+6*(pbcd6phb1+pbcd6phb2))})
-  try({res$Hunchback = 40*with(res,1*phb+1*pbcd6phb1+2*pbcd6phb2)})
-  try({res$Caudal = 40*with(res,pcad)})
-  try({res$Nanos = 40*with(res,1*pnos+1*boundmhb+1*boundmbcd)})
+  try({res$Bicoid = with(res,1*pbcd+1*pbcd1+2*pbcd2+3*pbcd3+4*pbcd4+5*pbcd5+6*pbcd6+6*(pbcd6phb1+pbcd6phb2))})
+  try({res$Hunchback = with(res,1*phb+1*pbcd6phb1+2*pbcd6phb2)})
+  try({res$Caudal = with(res,pcad)})
+  try({res$Nanos = with(res,1*pnos+1*boundmhb+1*boundmbcd)})
   
   return(res)
 }
