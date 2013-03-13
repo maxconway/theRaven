@@ -1,0 +1,18 @@
+cmd @ 0 set	reaction_rate bcd-trans 0.1
+cmd @ 600 diagnostics molecule
+cmd @ 600 set	reaction_rate bcd-trans 0.1
+cmd @ 600 diagnostics molecule
+cmd @ 620 diagnostics molecule
+cmd @ 1200 set	reaction_rate bcd-trans 0.1
+cmd @ 1800 set	reaction_rate bcd-trans 0.1
+cmd @ 2400 set	reaction_rate bcd-trans 0.1
+cmd @ 3000 set	reaction_rate bcd-trans 0.1
+cmd @ 3600 set	reaction_rate bcd-trans 0.1
+cmd @ 4200 set	reaction_rate bcd-trans 0.1
+cmd @ 4800 set	reaction_rate bcd-trans 0
+cmd @ 5400 set	reaction_rate bcd-trans 0
+cmd @ 6000 set	reaction_rate bcd-trans 0
+cmd @ 6600 set	reaction_rate bcd-trans 0
+cmd @ 7200 set	reaction_rate bcd-trans 0
+cmd @ 7800 set	reaction_rate bcd-trans 0
+cmd @ 8400 set	reaction_rate bcd-trans 0

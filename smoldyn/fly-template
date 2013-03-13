@@ -9,6 +9,12 @@ max_cmd 20000
 # species list
 species mbcd pbcd mcad pcad boundmcad mnos pnos boundmbcd mhb phb boundmhb pbcd1 pbcd2 pbcd3 pbcd4 pbcd5 pbcd6 pbcd6phb1 pbcd6phb2 hbpromoter
 
+#must come before params due to clash on definition of 'name'
+ifdefine pretty
+tiff_name ./movie/frame
+tiff_iter 1
+endif
+
 #parameters
 RePlAcEmE
 
