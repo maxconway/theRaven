@@ -1,5 +1,8 @@
 cmd @ 0 set	reaction_rate bcd-trans 0.238095238095238
+cmd @ 600 diagnostics molecule
 cmd @ 600 set	reaction_rate bcd-trans 0.289115646258503
+cmd @ 600 diagnostics molecule
+cmd @ 620 diagnostics molecule
 cmd @ 1200 set	reaction_rate bcd-trans 0.340136054421769
 cmd @ 1800 set	reaction_rate bcd-trans 0.391156462585034
 cmd @ 2400 set	reaction_rate bcd-trans 0.442176870748299

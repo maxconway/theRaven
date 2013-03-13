@@ -1,0 +1,2 @@
+cmd @ 0 set	difc mbcd 0.01
+cmd @ 0 set	drift mbcd 0.01 0 0

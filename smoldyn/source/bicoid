@@ -13,6 +13,6 @@ drift	mbcd	mbcd_drift 0 0
 
 ##
 #		compartment	name		equation	rate
-reaction_cmpt	cytoplasm	bcd-trans	mbcd -> mbcd + pbcd bcd_trans
-reaction_cmpt	cytoplasm	pbcd-deg	pbcd -> 0	pbcd_deg
+reaction	bcd-trans	mbcd -> mbcd + pbcd bcd_trans
+reaction	pbcd-deg	pbcd -> 0	pbcd_deg
 
