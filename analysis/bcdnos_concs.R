@@ -5,7 +5,7 @@ flyex$Bicoid = flyex$intensity/100
 flyex$stddev = flyex$stddev/100
 
 ##
-png('4:bcdnos',width=640)
+png('4-bcdnos',width=1024,height=768)
 
 flyex_scale = 0.8*10^5
 
