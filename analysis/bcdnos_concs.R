@@ -7,7 +7,7 @@ flyex$stddev = flyex$stddev/100
 ##
 png('4-bcdnos',width=1024,height=768)
 
-flyex_scale = 0.8*10^5
+flyex_scale = 3.2*10^4
 
 model = resshape_data('./results/Middif-nos-e2t10.result')
 

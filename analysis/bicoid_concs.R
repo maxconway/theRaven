@@ -16,7 +16,7 @@ flyex$stddev = flyex$stddev/100
 ##
 png('2-diffusion-rates.png',width=500,height=500)
 
-flyex_scale = 2*10^5
+flyex_scale = 0.76*10^5
 plot(1,col='white',ylab='molecules (μm⁻¹)',ylim=c(0,3*flyex_scale),xlim=c(0,500),main='Fig.2: Diffusion rates',xlab='distance (μm)')
 with(flyex[flyex$type=='bcd-nbg',],polygon(c(distance,rev(distance)),c((normcount+stddev)*flyex_scale,rev((normcount-stddev)*flyex_scale)),col='lightgrey',border=NA))
 text=c('literature','D=7.4μm²/s','D=4μm²/s','D=0.3μm²/s','Increasing translation rate, D=4μm²/s','mRNA diffusion from fertilization, D=4μm²/s','mRNA diffusion from cycle 3, D=4μm²/s')
