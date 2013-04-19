@@ -1,0 +1,19 @@
+Video
+	very scaled down for the sake of actually rendering it. 
+	had to render 7200000 particles
+	realtime
+		1fps
+	fast 
+		10fps
+		very few nuclei in movie, but we can see what's going on well
+Demo
+	Bicoid model
+		Name: Middif-e2t10
+		To run:
+cd smolyn/experiments
+smoldyn Middif-e2t10.smol --define pretty=true
+	Full model
+		Name: Midcadnoshbp-e3t10
+		To run:
+cd smolyn/experiments
+smoldyn Midcadnoshbp-e3t10.smol --define pretty=true

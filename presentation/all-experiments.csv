@@ -1,0 +1,109 @@
+name	timestep	endtime	length	doubleradius	radius	cylinder_end	halfLength	coreRadius	pbcd_dif	mbcd_num	bcd_trans	pbcd_deg	mbcd_deg	mbcd_dif	mbcd_drift	mcad_num	mcad_binding	mcad_unbinding	mcad_dif	pcad_deg	cad_trans	pcad_dif	mnos_num	pnos_dif	nos_trans	pnos_deg	mbcd_binding	mbcd_unbinding	mhb_num	mhb_binding	mhb_unbinding	mhb_dif	phb_deg	hb_trans	phb_dif	more_source1	more_source2	more_source3	more_source4	nuclear_absorption_speed	run1	run2
+default	10	10000	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+model1	9	8461	500	200	100	400	250	75	10	70	0.4	0.00041	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+model2	10	8461	500	200	100	400	250	75	5	70	0.4	0.000041	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+model4	10	8461	500	200	100	400	250	75	3	70	0.4	0.00166667	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+lowdif	10	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+middif	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+highdif	10	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+lowdifs	10	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+middifs	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+highdifs	10	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+lowdifsl	10	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	mbicoid_dif_1620s
+middifsl	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	mbicoid_dif_1620s
+highdifsl	10	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	mbicoid_dif_1620s
+model1-c	10	8461	500	200	100	400	250	75	10	70	0.4	0.00041	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+model2-c	10	8461	500	200	100	400	250	75	5	70	0.4	0.000041	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+model4-c	10	8461	500	200	100	400	250	75	3	70	0.4	0.00166667	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Lowdif-c	10	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Middif-c	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Highdif-c	10	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Lowdifs-c	10	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Middifs-c	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Highdifs-c	10	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0.01	0.01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Lowdifsl-c	10	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-c	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-c	10	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Bcd-nos	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	70	7.4	0.5	0.00033333	0.5	0.5	0	0	0	0	0	0	0	nanos	none	none	none	0	none	none
+Middifsl-c-nos	10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	70	7.4	0.5	0.00033333	0.5	0.5	0	0	0	0	0	0	0	nanos	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce2t5	5	8461	500	200	100	400	250	75	0.3	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce2t5	5	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce2t5	5	8461	500	200	100	400	250	75	7.4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce2t10	10	8461	500	200	100	400	250	75	0.3	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce2t10	10	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce2t10	10	8461	500	200	100	400	250	75	7.4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce2t1	1	8461	500	200	100	400	250	75	0.3	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce2t1	1	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce2t1	1	8461	500	200	100	400	250	75	7.4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce2t0.1	0.1	8461	500	200	100	400	250	75	0.3	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce2t0.1	0.1	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce2t0.1	0.1	8461	500	200	100	400	250	75	7.4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce2t2	2	8461	500	200	100	400	250	75	0.3	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce2t2	2	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce2t2	2	8461	500	200	100	400	250	75	7.4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce4t5	5	8461	500	200	100	400	250	75	0.3	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce4t5	5	8461	500	200	100	400	250	75	4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce4t5	5	8461	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce4t10	10	8461	500	200	100	400	250	75	0.3	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce4t10	10	8461	500	200	100	400	250	75	4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce4t10	10	8461	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce4t1	1	8461	500	200	100	400	250	75	0.3	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce4t1	1	8461	500	200	100	400	250	75	4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce4t1	1	8461	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce4t0.1	0.1	8461	500	200	100	400	250	75	0.3	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce4t0.1	0.1	8461	500	200	100	400	250	75	4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce4t0.1	0.1	8461	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Lowdifsl-ce4t2	2	8461	500	200	100	400	250	75	0.3	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Middifsl-ce4t2	2	8461	500	200	100	400	250	75	4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Highdifsl-ce4t2	2	8461	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	mbicoid_dif_1620s
+Default-e4t1	1	10000	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Default-e4t4	4	10000	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Default-e4t16	16	10000	500	200	100	400	250	75	7.4	7	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Caudal-test	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	50	0.5	0.5	0	0.000333333	0.5	7.4	0	0	0	0	0	0	0	0	0		0	0	0	caudal	none	none	none	0	changing_trans	none
+Cadnos-test	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	50	0.5	0.5	0	0.000333333	0.5	7.4	70	7.4	0.5	0.000333333	0.5	0.5	0	0	0		0	0	0	caudal	nanos	none	none	0	changing_trans	none
+Cadnoshb-test	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	50	0.5	0.5	0	0.000333333	0.5	7.4	70	7.4	0.5	0.000333333	0.5	0.5	70	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Cadnoshb-transc	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	50	0.5	0.5	0	0.000333333	0.5	7.4	70	7.4	0.5	0.000333333	0.5	0.5	7	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc2	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	50	0.5	0.5	0	0.000333333	0.5	7.4	0	7.4	0.5	0.000333333	0.5	0.5	70	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc2e4t10	10	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	0.5	0.5	0	0.000333333	0.5	7.4	7	7.4	0.5	0.000333333	0.5	0.5	7	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc2e2t10	10	8461	500	200	100	400	250	75	4	700	1	0.000333333	0	0	0	500	0.5	0.5	0	0.000333333	0.5	7.4	700	7.4	0.5	0.000333333	0.5	0.5	700	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc2e4t1	1	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	0.5	0.5	0	0.000333333	0.5	7.4	7	7.4	0.5	0.000333333	0.5	0.5	7	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc2e2t1	1	8461	500	200	100	400	250	75	4	700	1	0.000333333	0	0	0	500	0.5	0.5	0	0.000333333	0.5	7.4	700	7.4	0.5	0.000333333	0.5	0.5	700	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc3e4t10	10	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	0.5	0.5	0	0.000333333	0.5	7.4	7	7.4	0.5	0.000333333	0.5	0.5	7	10	0.1	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc3e2t10	10	8461	500	200	100	400	250	75	4	700	1	0.000333333	0	0	0	500	0.5	0.5	0	0.000333333	0.5	7.4	700	7.4	0.5	0.000333333	0.5	0.5	700	10	0.1	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc3e4t1	1	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	0.5	0.5	0	0.000333333	0.5	7.4	7	7.4	0.5	0.000333333	0.5	0.5	7	10	0.1	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadhb-transc3e2t1	1	8461	500	200	100	400	250	75	4	700	1	0.000333333	0	0	0	500	0.5	0.5	0	0.000333333	0.5	7.4	700	7.4	0.5	0.000333333	0.5	0.5	700	10	0.1	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadnoshb-transce4t10	10	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	0.5	0.5	0	0.000333333	0.5	7.4	7	7.4	0.5	0.000333333	0.5	0.5	7	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadnoshb-transce4t5	5	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	0.5	0.5	0	0.000333333	0.5	7.4	7	7.4	0.5	0.000333333	0.5	0.5	7	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadnoshb-transce4t1	1	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	0.5	0.5	0	0.000333333	0.5	7.4	7	7.4	0.5	0.000333333	0.5	0.5	7	0.5	0.5	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadnoshb-transc2e4t10	10	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	10	0.1	7	10	0.1	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadnoshb-transc2e4t5	5	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	10	0.1	7	10	0.1	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadnoshb-transc2e4t1	1	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	10	0.1	7	10	0.1	0	0.01666666	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	hbpromoter
+Cadnoshb-transc3e4t10	10	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	10	0.1	7	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Cadnoshb-transc3e4t5	5	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	10	0.1	7	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Cadnoshb-transc3e4t1	1	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	10	0.1	7	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Cadnoshb-transc3e3t10	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	70	7.4	0.5	0.000333333	10	0.1	70	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Lowdif-e3t10		10	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Middif-e3t10		10	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Highdif-e3t10		10	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Lowdif-e2t10	238	10	8461	500	200	100	400	250	75	0.3	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Middif-e2t10	265	10	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Highdif-e2t10	289	10	8461	500	200	100	400	250	75	7.4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Lowdif-e3t1	542	1	8461	500	200	100	400	250	75	0.3	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Middif-e3t1	672	1	8461	500	200	100	400	250	75	4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Highdif-e3t1	705	1	8461	500	200	100	400	250	75	7.4	70	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	none
+Middif-c-e2t10	242	10	8461	500	200	100	400	250	75	4	700	0.000001	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Middifs-e2t10	254	10	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	mbicoid_dif_0s
+Middifsl-e2t10	256	10	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	none	mbicoid_dif_1620s
+Middif-c-e3t1		1	8461	500	200	100	400	250	75	4	70	0.00001	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans	none
+Midcadnoshb-e4t10	124	10	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	5	100	0.01	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	100	0.01	7	100	0.01	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Midcadnoshb-e3t10	15498	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	70	7.4	0.5	0.000333333	10	0.1	70	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Midcadnoshb-5e4t10	4764	10	8461	500	200	100	400	250	75	4	35	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	35	7.4	0.5	0.000333333	10	0.1	35	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	none	0	changing_trans	none
+Midcadnoshbp-e3t10	19456	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	70	7.4	0.5	0.000333333	10	0.1	70	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	hbpromoter	0	changing_trans	none
+Midcadnoshbp3-e3t10		10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	5	10	0.1	0	0.000333333	0.5	0.3	70	7.4	0.5	0.000333333	10	0.1	70	10	0.1	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	hbpromoter	0	changing_trans	none
+Middif-nos-e2t10	1526	10	8461	500	200	100	400	250	75	4	700	0.4	0.0003333	0	0	0	0	0	0	0	0	0	0	700	7.4	0.5	0.000333333	100	0.001	0	0	0	0	0	0	0	nanos	none	none	none	0	none	none
+Midcadnoshbp2-e3t10	25464	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	50	100	0.01	0	0.000333333	0.5	0.3	70	7.4	0.5	0.000333333	100	0.01	70	100	0.01	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	hbpromoter	0	changing_trans	none
+Middif-c-test-e3t10		10	8461	500	200	100	400	250	75	4	70	0.00001	0.0003333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	none	none	none	none	0	changing_trans_test	none
+Midcad1-e3t10		10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	70	100	0.0001	0	0.000333333	0.5	0.3	70	7.4	0.5	0.000333333	100	0.0001	70	100	0.0001	0	0.000333333	1.47	0.3	caudal	none	none	none	0	changing_trans	none
+Midcadnoshbp3-e3t10	20682	10	8461	500	200	100	400	250	75	4	70	1	0.000333333	0	0	0	70	100	0.0001	0	0.000333333	0.5	0.3	70	7.4	0.5	0.000333333	100	0.0001	70	100	0.01	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	hbpromoter	0	changing_trans	none
+Midcadnoshbp3-5e4t10	5746	10	8461	500	200	100	400	250	75	4	35	1	0.000333333	0	0	0	35	100	0.0001	0	0.000333333	0.5	0.3	35	7.4	0.5	0.000333333	100	0.0001	35	100	0.01	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	hbpromoter	0	changing_trans	none
+Midcadnoshbp3-e4t10	1346	10	8461	500	200	100	400	250	75	4	7	1	0.000333333	0	0	0	7	100	0.0001	0	0.000333333	0.5	0.3	7	7.4	0.5	0.000333333	100	0.0001	7	100	0.01	0	0.000333333	1.47	0.3	caudal	nanos	hunchback	hbpromoter	0	changing_trans	none
