@@ -16,7 +16,7 @@ flyex$distance = flyex$xcoord*5
 flyex$normcount = flyex$intensity/100
 flyex$stddev = flyex$stddev/100
 
-flyex_scale_hb = 2.4*10^5
+flyex_scale_hb = 2.2*10^5
 flyex_scale_bcd = 6.8*10^4
 flyex_scale_cad = 4*10^4
 
@@ -26,9 +26,9 @@ model1 = resshape_data('./results/Midcadnoshbp-e3t10.result')
 
 png('6-bcdnoscadhb.png',width=500,height=500)
 
-plot(0,ylim=c(0,1.2*max(flyex_scale_bcd,flyex_scale_cad,flyex_scale_hb)),xlim=c(0,500),main='Fig.6: Bicoid, Nanos, Caudal, Hunchback',xlab='distance (μm)',ylab='molecules (μm⁻¹)')
+plot(0,ylim=c(0,1.2*max(flyex_scale_bcd,flyex_scale_cad,flyex_scale_hb)),xlim=c(0,500),xlab='distance (μm)',ylab='molecules (μm⁻¹)')
 
-text=c('Bicoid, literature','Caudal, literature','Hunchback, literature','Bicoid','Nanos','Caudal','Hunchback')
+text=c('Bicoid, FlyEx ± σ','Caudal, FlyEx ± σ','Hunchback, literature','Bicoid','Nanos','Caudal','Hunchback')
 legend('topright',text,col=c('pink','palegreen','lightcoral','deeppink','blue','green','indianred'),pch=c('▊','▊','▊','-','-','-','-'))
 
 with(flyex[flyex$type=='hb-bg',],polygon(c(distance,rev(distance)),c((normcount+stddev)*flyex_scale_hb,rev((normcount-stddev)*flyex_scale_hb)),col='lightcoral',border=NA))

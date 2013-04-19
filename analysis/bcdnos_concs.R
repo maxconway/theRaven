@@ -11,7 +11,7 @@ flyex_scale = 3.2*10^4
 
 model = resshape_data('./results/Middif-nos-e2t10.result')
 
-plot(0,ylim=c(0,4*flyex_scale),xlim=c(0,500),main='Fig.7: Bicoid, Nanos',xlab='distance (μm)',ylab='molecules (μm⁻¹)')
+plot(0,ylim=c(0,4*flyex_scale),xlim=c(0,500),xlab='distance (μm)',ylab='molecules (μm⁻¹)')
 with(flyex,polygon(c(distance,rev(distance)),c((Bicoid+stddev)*flyex_scale,rev((Bicoid-stddev)*flyex_scale)),col='pink',border=NA))
 
 text=c('literature','Bicoid','Nanos')

@@ -14,12 +14,12 @@ flyex$normcount = flyex$intensity/100
 flyex$stddev = flyex$stddev/100
 
 ##
-png('2-diffusion-rates.png',width=500,height=500)
+png('2-diffusion-rates.png',width=1000,height=600)
 
 flyex_scale = 0.76*10^5
-plot(1,col='white',ylab='molecules (μm⁻¹)',ylim=c(0,3*flyex_scale),xlim=c(0,500),main='Fig.2: Diffusion rates',xlab='distance (μm)')
+plot(1,col='white',ylab='molecules (μm⁻¹)',ylim=c(0,3*flyex_scale),xlim=c(0,500),xlab='distance (μm)')
 with(flyex[flyex$type=='bcd-nbg',],polygon(c(distance,rev(distance)),c((normcount+stddev)*flyex_scale,rev((normcount-stddev)*flyex_scale)),col='lightgrey',border=NA))
-text=c('literature','D=7.4μm²/s','D=4μm²/s','D=0.3μm²/s','Increasing translation rate, D=4μm²/s','mRNA diffusion from fertilization, D=4μm²/s','mRNA diffusion from cycle 3, D=4μm²/s')
+text=c('FlyEx ± σ','D=7.4μm²/s','D=4μm²/s','D=0.3μm²/s','Increasing translation rate, D=4μm²/s','mRNA diffusion from fertilization, D=4μm²/s','mRNA diffusion from cycle 3, D=4μm²/s')
 legend('topright',text,col=c('grey','darkblue','dodgerblue','aquamarine','red','darkred','deeppink'),pch=c('▊','-','-','-','-','-','-'))
 
 high = resshape_data('./results/Highdif-e2t10.result')
@@ -42,7 +42,7 @@ dev.off()
 
 ##
 model = resshape_data('./results/Middif-e2t10.result')
-wireframe(Bicoid*10^2 ~ distance * time,model,par.settings=list(axis.line = list(col = "transparent")),colorkey=NULL,drape=TRUE,shade=T,pretty=T,scales = list(arrows=FALSE, col = "black"),main='Fig.3 diffusion of 4μm²/s, changing translation rate',xlab='distance (μm)',ylab='time (s)',zlab=list('molecules (μm⁻¹)',rot=90))
+wireframe(Bicoid*10^2 ~ distance * time,model,par.settings=list(axis.line = list(col = "transparent")),colorkey=NULL,drape=TRUE,shade=T,pretty=T,scales = list(arrows=FALSE, col = "black"),main='Fig.3 Diffusion = 4μm²/s',xlab='distance (μm)',ylab='time (s)',zlab=list('molecules (μm⁻¹)',rot=90))
 
 
 
