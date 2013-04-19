@@ -1,11 +1,10 @@
--fly is smoldyn loading file
+-fly-template is the base source file
 -makefile is makefile
 -parameters is default parameters
--readme is this
--experiment.csv is all tests to be done
+-experiment*.csv is all experiments to be run
 -generate_params.py uses experiment.csv to populate ./experiments
--./experiments contains parameter sets to be iterated over
--./results contains results
+-./experiments contains parameter sets and finished smoldyn files
+-./results contains results files
 -./source contains:
 	cell-shape defines the appearance and properties of the cell membrane
 	cell-core allows exclusion of mRNA from the core
